@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align:center">Application Form</h1>
+    <hr>
+<marquee style="background-color:darkblue; font-size:25px; color:white">Admission is Going on</marquee>
+
+<!-- <label> tag is used to give the title of the input box or radio options-->
+
+<!-- id="" is used to connect the label and the input so that the input box becomes bold or writable clicking just on the label-->
+<br><br>
+    <label for="flnm">Full Name: </label>
+    <input type="text" id="flnm" name="fullname" placeholder="your full name" style="text-align: center"> <br>
+
+    <label for="fthr-nm">Father's Name:</label>
+    <input type="text" id="fthr-nm" name="fathername" placeholder="your father's name" style="text-align: center"> <br>
+
+    <label for="mthr-nm">Mother's Name:</label>
+    <input type="text" id="mthr-nm" name="mothername" placeholder="your mother's name" style="text-align: center"> <br> 
+
+Gender:
+    <input type="radio" id="mle" name="gender">
+    <label for="mle">Male</label>
+    <input type="radio" id="fmle" name="gender">
+    <label for="fmle">Female</label>
+    <input type="radio" id="othr" name="gender">
+    <label for="othr">Others</label> <br>
+    <!-- write down same value in name="" atttributes to get only one choice option in the radio option -->
+
+    <label for="contry">Country:</label>
+    <input list="cntry">
+    <datalist id="cntry">
+        <option value="Bangladesh"></option>
+        <option value="India"></option>
+        <option value="Pakistan"></option>
+        <option value="Egypt"></option>
+    </datalist> <br>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="Dob" placeholder="select your date of birth"> <br>
+
+Academic Result: <br>
+<table border="1px">
+    <tr>
+        <th>Name of Exam</th>
+        <th>Passing Year</th>
+        <th>University/Board</th>
+        <th>Result (GPA/CGPA)</th>
+    </tr>
+
+    <tr>
+        <td>
+            <input list="1">
+            <datalist id="1">
+                <option value="SSC" name="ssc"></option>
+                <option value="HSC" name="hsc"></option>
+                <option value="Bachelor" name="bchlr"></option>
+                <option value="Masters" name="mstrs"></option>
+            </datalist>
+        </td> 
+
+        <td>
+            <input type="month" id="2">
+        </td>
+
+        <td>
+            <input list="3">
+            <datalist id="3">
+                <option value="Board" id="3.1" name="a"></option>
+                    <input list="3.1">
+                    <datalist id="3.1">
+                        <option value="Dhaka"></option>
+                        <option value="Rajshahi"></option>
+                        <option value="Mymensingh"></option>
+                        <option value="Chittagong"></option>
+                        <option value="Khulna"></option>
+                        <option value="Barishal"></option>
+                        <option value="Jossore"></option>
+                        <option value="Comilla"></option>
+                        <option value="Sylhet"></option>
+                    </datalist>
+                <option value="University" id="3.2" name="b"></option>
+                    <input list="3.2">
+                    <datalist id="3.2">
+                        <option value="Dhaka University"></option>
+                        <option value="Rajshahi University"></option>
+                        <option value="Mymensingh Medical"></option>
+                        <option value="Chittagong University"></option>
+                    </datalist>
+        </td> <!-- here, i tried to make two option of Board & University. Then I wanted to make sub options under each of Board & University. Try it later.-->
+
+        <td>
+            <input list="4">
+            <datalist id="4">
+                <option value="A+"></option>
+                <option value="A"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B"></option>
+                <option value="B-"></option>
+                <option value="C"></option>
+                <option value="D"></option>
+            </datalist>
+        </td>
+
+ 
+    </tr>
+
+    <tr>
+        <td>
+            <input list="1">
+            <datalist id="1">
+                <option value="SSC" name="ssc"></option>
+                <option value="HSC" name="hsc"></option>
+                <option value="Bachelor" name="bchlr"></option>
+                <option value="Masters" name="mstrs"></option>
+            </datalist>
+        </td> 
+
+        <td>
+            <input type="month" id="2">
+        </td>
+
+        <td>
+            <input list="3">
+            <datalist id="3">
+                <option value="Board" id="3.1" name="a"></option>
+                    <input list="3.1">
+                    <datalist id="3.1">
+                        <option value="Dhaka"></option>
+                        <option value="Rajshahi"></option>
+                        <option value="Mymensingh"></option>
+                        <option value="Chittagong"></option>
+                        <option value="Khulna"></option>
+                        <option value="Barishal"></option>
+                        <option value="Jossore"></option>
+                        <option value="Comilla"></option>
+                        <option value="Sylhet"></option>
+                    </datalist>
+                <option value="University" id="3.2" name="b"></option>
+                    <input list="3.2">
+                    <datalist id="3.2">
+                        <option value="Dhaka University"></option>
+                        <option value="Rajshahi University"></option>
+                        <option value="Mymensingh Medical"></option>
+                        <option value="Chittagong University"></option>
+                    </datalist>
+        </td> <!-- here, i tried to make two option of Board & University. Then I wanted to make sub options under each of Board & University. Try it later.-->
+
+        <td>
+            <input list="4">
+            <datalist id="4">
+                <option value="A+"></option>
+                <option value="A"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B"></option>
+                <option value="B-"></option>
+                <option value="C"></option>
+                <option value="D"></option>
+            </datalist>
+        </td>
+
+ 
+    </tr>
+
+    <tr>
+        <td>
+            <input list="1">
+            <datalist id="1">
+                <option value="SSC" name="ssc"></option>
+                <option value="HSC" name="hsc"></option>
+                <option value="Bachelor" name="bchlr"></option>
+                <option value="Masters" name="mstrs"></option>
+            </datalist>
+        </td> 
+
+        <td>
+            <input type="month" id="2">
+        </td>
+
+        <td>
+            <input list="3">
+            <datalist id="3">
+                <option value="Board" id="3.1" name="a"></option>
+                    <input list="3.1">
+                    <datalist id="3.1">
+                        <option value="Dhaka"></option>
+                        <option value="Rajshahi"></option>
+                        <option value="Mymensingh"></option>
+                        <option value="Chittagong"></option>
+                        <option value="Khulna"></option>
+                        <option value="Barishal"></option>
+                        <option value="Jossore"></option>
+                        <option value="Comilla"></option>
+                        <option value="Sylhet"></option>
+                    </datalist>
+                <option value="University" id="3.2" name="b"></option>
+                    <input list="3.2">
+                    <datalist id="3.2">
+                        <option value="Dhaka University"></option>
+                        <option value="Rajshahi University"></option>
+                        <option value="Mymensingh Medical"></option>
+                        <option value="Chittagong University"></option>
+                    </datalist>
+        </td> <!-- here, i tried to make two option of Board & University. Then I wanted to make sub options under each of Board & University. Try it later.-->
+
+        <td>
+            <input list="4">
+            <datalist id="4">
+                <option value="A+"></option>
+                <option value="A"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B"></option>
+                <option value="B-"></option>
+                <option value="C"></option>
+                <option value="D"></option>
+            </datalist>
+        </td>
+
+ 
+    </tr>
+
+    <tr>
+        <td>
+            <input list="1">
+            <datalist id="1">
+                <option value="SSC" name="ssc"></option>
+                <option value="HSC" name="hsc"></option>
+                <option value="Bachelor" name="bchlr"></option>
+                <option value="Masters" name="mstrs"></option>
+            </datalist>
+        </td> 
+
+        <td>
+            <input type="month" id="2">
+        </td>
+
+        <td>
+            <input list="3">
+            <datalist id="3">
+                <option value="Board" id="3.1" name="a"></option>
+                    <input list="3.1">
+                    <datalist id="3.1">
+                        <option value="Dhaka"></option>
+                        <option value="Rajshahi"></option>
+                        <option value="Mymensingh"></option>
+                        <option value="Chittagong"></option>
+                        <option value="Khulna"></option>
+                        <option value="Barishal"></option>
+                        <option value="Jossore"></option>
+                        <option value="Comilla"></option>
+                        <option value="Sylhet"></option>
+                    </datalist>
+                <option value="University" id="3.2" name="b"></option>
+                    <input list="3.2">
+                    <datalist id="3.2">
+                        <option value="Dhaka University"></option>
+                        <option value="Rajshahi University"></option>
+                        <option value="Mymensingh Medical"></option>
+                        <option value="Chittagong University"></option>
+                    </datalist>
+        </td> <!-- here, i tried to make two option of Board & University. Then I wanted to make sub options under each of Board & University. Try it later.-->
+
+        <td>
+            <input list="4">
+            <datalist id="4">
+                <option value="A+"></option>
+                <option value="A"></option>
+                <option value="A-"></option>
+                <option value="B+"></option>
+                <option value="B"></option>
+                <option value="B-"></option>
+                <option value="C"></option>
+                <option value="D"></option>
+            </datalist>
+        </td>
+
+ 
+    </tr>
+
+</table>
+
+
+
+<br><br><br>
+
+    <input type="submit" value="Submit" style="background-color: blue; color:white">
+    <input type="reset" value="Reset" style="background-color: brown; color:white">
+
+
+
+</body>
+</html>
